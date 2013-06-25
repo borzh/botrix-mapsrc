@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "4715"
-	"mapversion" "108"
+	"mapversion" "115"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "108"
+	"mapversion" "115"
 	"classname" "worldspawn"
 	"comment" "Decompiled by VMEX v0.98g from D:"
 	"detailmaterial" "detail/detailsprites"
@@ -6904,7 +6904,7 @@ entity
 	"returndelay" "-1"
 	"skin" "0"
 	"soundmoveoverride" "Doors.Move3"
-	"spawnflags" "0"
+	"spawnflags" "32768"
 	"spawnpos" "0"
 	"speed" "100"
 	"targetname" "Door1"
@@ -6930,7 +6930,7 @@ entity
 	"returndelay" "-1"
 	"skin" "0"
 	"soundmoveoverride" "Doors.Move3"
-	"spawnflags" "0"
+	"spawnflags" "32768"
 	"spawnpos" "0"
 	"speed" "100"
 	"targetname" "Door2"
@@ -6957,7 +6957,7 @@ entity
 	"returndelay" "-1"
 	"skin" "0"
 	"soundmoveoverride" "Doors.Move3"
-	"spawnflags" "0"
+	"spawnflags" "32768"
 	"spawnpos" "0"
 	"speed" "100"
 	"targetname" "Door3"
@@ -6983,10 +6983,10 @@ entity
 	"returndelay" "-1"
 	"skin" "0"
 	"soundmoveoverride" "Doors.Move3"
-	"spawnflags" "0"
+	"spawnflags" "32768"
 	"spawnpos" "0"
 	"speed" "100"
-	"targetname" "Door7"
+	"targetname" "Door4"
 	"origin" "1138 -1167 54"
 	editor
 	{
@@ -7009,10 +7009,10 @@ entity
 	"returndelay" "-1"
 	"skin" "0"
 	"soundmoveoverride" "Doors.Move3"
-	"spawnflags" "0"
+	"spawnflags" "32768"
 	"spawnpos" "0"
 	"speed" "100"
-	"targetname" "Door6"
+	"targetname" "Door5"
 	"origin" "1674 -1120 54"
 	editor
 	{
@@ -7035,10 +7035,10 @@ entity
 	"returndelay" "-1"
 	"skin" "0"
 	"soundmoveoverride" "Doors.Move3"
-	"spawnflags" "0"
+	"spawnflags" "32768"
 	"spawnpos" "0"
 	"speed" "100"
-	"targetname" "Door5"
+	"targetname" "Door6"
 	"origin" "1662 -639 55"
 	editor
 	{
@@ -7061,10 +7061,10 @@ entity
 	"returndelay" "-1"
 	"skin" "0"
 	"soundmoveoverride" "Doors.Move3"
-	"spawnflags" "0"
+	"spawnflags" "32768"
 	"spawnpos" "0"
 	"speed" "100"
-	"targetname" "Door4"
+	"targetname" "Door7"
 	"origin" "1649 -474.532 54"
 	editor
 	{
@@ -7087,7 +7087,7 @@ entity
 	"returndelay" "-1"
 	"skin" "0"
 	"soundmoveoverride" "Doors.Move3"
-	"spawnflags" "0"
+	"spawnflags" "32768"
 	"spawnpos" "0"
 	"speed" "100"
 	"targetname" "Door8"
@@ -7113,10 +7113,10 @@ entity
 	"returndelay" "-1"
 	"skin" "0"
 	"soundmoveoverride" "Doors.Move3"
-	"spawnflags" "0"
+	"spawnflags" "32768"
 	"spawnpos" "0"
 	"speed" "100"
-	"targetname" "Door10"
+	"targetname" "Door9"
 	"origin" "526 -257 54.2813"
 	editor
 	{
@@ -7151,7 +7151,8 @@ entity
 	"wait" "-1"
 	connections
 	{
-		"OnPressed" "Door5,Toggle,,0,-1"
+		"OnPressed" "Door8,Toggle,,0,-1"
+		"OnPressed" "Door9,Toggle,,0,-1"
 	}
 	solid
 	{
@@ -7262,7 +7263,8 @@ entity
 	"wait" "-1"
 	connections
 	{
-		"OnPressed" "Door6,Toggle,,0,-1"
+		"OnPressed" "Door10,Toggle,,0,-1"
+		"OnPressed" "Door3,Toggle,,0,-1"
 	}
 	solid
 	{
@@ -7373,7 +7375,8 @@ entity
 	"wait" "-1"
 	connections
 	{
-		"OnPressed" "Door8,Toggle,,0,-1"
+		"OnPressed" "Door3,Toggle,,0,-1"
+		"OnPressed" "Door6,Toggle,,0,-1"
 	}
 	solid
 	{
@@ -7478,13 +7481,14 @@ entity
 	"sounds" "3"
 	"spawnflags" "1056"
 	"speed" "5"
-	"targetname" "Button5"
+	"targetname" "Button4"
 	"unlocked_sentence" "0"
 	"unlocked_sound" "0"
 	"wait" "-1"
 	connections
 	{
-		"OnPressed" "Door3,Toggle,,0,-1"
+		"OnPressed" "Door2,Toggle,,0,-1"
+		"OnPressed" "Door8,Toggle,,0,-1"
 	}
 	solid
 	{
@@ -7589,13 +7593,14 @@ entity
 	"sounds" "3"
 	"spawnflags" "1056"
 	"speed" "5"
-	"targetname" "Button6"
+	"targetname" "Button5"
 	"unlocked_sentence" "0"
 	"unlocked_sound" "0"
 	"wait" "-1"
 	connections
 	{
 		"OnPressed" "Door2,Toggle,,0,-1"
+		"OnPressed" "Door3,Toggle,,0,-1"
 	}
 	solid
 	{
@@ -7700,13 +7705,14 @@ entity
 	"sounds" "3"
 	"spawnflags" "1056"
 	"speed" "5"
-	"targetname" "Button7"
+	"targetname" "Button6"
 	"unlocked_sentence" "0"
 	"unlocked_sound" "0"
 	"wait" "-1"
 	connections
 	{
-		"OnPressed" "Door1,Toggle,,0,-1"
+		"OnPressed" "Door8,Toggle,,0,-1"
+		"OnPressed" "Door2,Toggle,,0,-1"
 	}
 	solid
 	{
@@ -7811,13 +7817,14 @@ entity
 	"sounds" "3"
 	"spawnflags" "1056"
 	"speed" "5"
-	"targetname" "Button10"
+	"targetname" "Button7"
 	"unlocked_sentence" "0"
 	"unlocked_sound" "0"
 	"wait" "-1"
 	connections
 	{
 		"OnPressed" "Door10,Toggle,,0,-1"
+		"OnPressed" "Door7,Toggle,,0,-1"
 	}
 	solid
 	{
@@ -7933,10 +7940,10 @@ entity
 	"returndelay" "-1"
 	"skin" "0"
 	"soundmoveoverride" "Doors.Move3"
-	"spawnflags" "0"
+	"spawnflags" "32768"
 	"spawnpos" "0"
 	"speed" "100"
-	"targetname" "Door9"
+	"targetname" "Door10"
 	"origin" "928.719 -543 55"
 	editor
 	{
@@ -7965,13 +7972,14 @@ entity
 	"sounds" "3"
 	"spawnflags" "1056"
 	"speed" "5"
-	"targetname" "Button4"
+	"targetname" "Button8"
 	"unlocked_sentence" "0"
 	"unlocked_sound" "0"
 	"wait" "-1"
 	connections
 	{
-		"OnPressed" "Door4,Open,,0,-1"
+		"OnPressed" "Door6,Toggle,,0,-1"
+		"OnPressed" "Door4,Toggle,,0,-1"
 	}
 	solid
 	{
@@ -8076,13 +8084,14 @@ entity
 	"sounds" "3"
 	"spawnflags" "1056"
 	"speed" "5"
-	"targetname" "Button8"
+	"targetname" "Button9"
 	"unlocked_sentence" "0"
 	"unlocked_sound" "0"
 	"wait" "-1"
 	connections
 	{
-		"OnPressed" "Door7,Toggle,,0,-1"
+		"OnPressed" "Door5,Toggle,,0,-1"
+		"OnPressed" "Door2,Toggle,,0,-1"
 	}
 	solid
 	{
@@ -8185,14 +8194,15 @@ entity
 	"renderfx" "0"
 	"rendermode" "0"
 	"sounds" "3"
-	"spawnflags" "544"
+	"spawnflags" "512"
 	"speed" "5"
-	"targetname" "Button9"
+	"targetname" "Button10"
 	"unlocked_sentence" "0"
 	"unlocked_sound" "0"
 	"wait" "-1"
 	connections
 	{
+		"OnPressed" "Door6,Toggle,,0,-1"
 		"OnPressed" "Door9,Toggle,,0,-1"
 	}
 	solid
@@ -8324,8 +8334,8 @@ cameras
 	"activecamera" "0"
 	camera
 	{
-		"position" "[799.36 -1059.95 565.861]"
-		"look" "[799.066 -1059.24 565.199]"
+		"position" "[1056.03 -543.611 234]"
+		"look" "[1056.11 -542.624 234.202]"
 	}
 }
 cordon
